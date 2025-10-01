@@ -1,0 +1,140 @@
+/* Umum */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f3f6fa; /* biru muda */
+  color: #333;
+}
+
+/* Kotak login */
+.login-container {
+  background: white;
+  padding: 40px 32px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+  width: 350px;
+  max-width: 90vw;
+  text-align: center;
+  margin: 60px auto; /* agar di tengah dan ada jarak atas */
+}
+
+.login-container h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.login-container input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.login-container button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #3498db;   /* biru */
+  color: white;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background: #1e6da1;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background: #2ecc71;  /* hijau */
+  padding: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #f1c40f;  /* kuning */
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(180deg, #2ecc71, #f3f6fa);
+  color: #2c3e50;
+}
+
+/* Produk */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  background: white;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #3498db;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Admin Table */
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #2c3e50;
+}
+
+table {
+  width: 85%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #3498db;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #ecf9ff; /* biru muda */
+}
